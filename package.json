@@ -1,0 +1,30 @@
+{
+  "name": "recruitment_rools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fmt": "prettier --write 'src/**/*.ts' 'src/**/*.tsx'",
+    "build": "webpack",
+    "watch": "npm run watch",
+    "pack": "webpack --production"
+  },
+  "keywords": [],
+  "author": "hykwtakumin@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "acorn": ">=7.1.1",
+    "debug": "^4.1.1",
+    "prettier": "^1.19.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "ts-config-webpack-plugin": "^1.3.1",
+    "typescript": "^3.8.3",
+    "webpack": ">=4.42.0",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-cli": "^3.3.2"
+  }
+}
