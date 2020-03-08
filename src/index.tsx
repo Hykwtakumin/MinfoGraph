@@ -8,7 +8,7 @@ console.log(`this is index page!`);
 
 render(
   <>
-    <div>{`This is Index Page!!`}</div>
+    <div className="topTitle">{`This is Index Page!!`}</div>
   </>,
   document.getElementById("root")
 );
