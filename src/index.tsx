@@ -4,6 +4,7 @@ import { logger } from "./components/Logger";
 const { debug } = logger("index:index");
 
 debug(`this is index page!`);
+console.log(`this is index page!`);
 
 render(
   <>
