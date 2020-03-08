@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/classnames/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/classnames/index.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n  Copyright (c) 2017 Jed Watson.\n  Licensed under the MIT License (MIT), see\n  http://jedwatson.github.io/classnames\n*/\n/* global define */\n\n(function () {\n\t'use strict';\n\n\tvar hasOwn = {}.hasOwnProperty;\n\n\tfunction classNames () {\n\t\tvar classes = [];\n\n\t\tfor (var i = 0; i < arguments.length; i++) {\n\t\t\tvar arg = arguments[i];\n\t\t\tif (!arg) continue;\n\n\t\t\tvar argType = typeof arg;\n\n\t\t\tif (argType === 'string' || argType === 'number') {\n\t\t\t\tclasses.push(arg);\n\t\t\t} else if (Array.isArray(arg) && arg.length) {\n\t\t\t\tvar inner = classNames.apply(null, arg);\n\t\t\t\tif (inner) {\n\t\t\t\t\tclasses.push(inner);\n\t\t\t\t}\n\t\t\t} else if (argType === 'object') {\n\t\t\t\tfor (var key in arg) {\n\t\t\t\t\tif (hasOwn.call(arg, key) && arg[key]) {\n\t\t\t\t\t\tclasses.push(key);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\treturn classes.join(' ');\n\t}\n\n\tif ( true && module.exports) {\n\t\tclassNames.default = classNames;\n\t\tmodule.exports = classNames;\n\t} else if (true) {\n\t\t// register as 'classnames', consistent with npm package name\n\t\t!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {\n\t\t\treturn classNames;\n\t\t}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),\n\t\t\t\t__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));\n\t} else {}\n}());\n\n\n//# sourceURL=webpack:///./node_modules/classnames/index.js?");
+
+/***/ }),
+
 /***/ "./node_modules/debug/src/browser.js":
 /*!*******************************************!*\
   !*** ./node_modules/debug/src/browser.js ***!
@@ -262,15 +273,27 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 
 /***/ }),
 
-/***/ "./src/components/Logger.ts":
-/*!**********************************!*\
-  !*** ./src/components/Logger.ts ***!
-  \**********************************/
+/***/ "./src/components/MainFrame.tsx":
+/*!**************************************!*\
+  !*** ./src/components/MainFrame.tsx ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst Debug = __webpack_require__(/*! debug */ \"./node_modules/debug/src/browser.js\");\nexports.logger = (namespace) => {\n    return {\n        debug: Debug(`rec-tools:${namespace}`),\n        error: Debug(`rec-tools:error:${namespace}`),\n        info: Debug(`rec-tools:info:${namespace}`),\n        warn: Debug(`rec-tools:warn:${namespace}`),\n        throwError: msg => {\n            throw new Error(`${namespace}: ${msg}`);\n        }\n    };\n};\n\n\n//# sourceURL=webpack:///./src/components/Logger.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nconst Button_1 = __webpack_require__(/*! ./share/Button */ \"./src/components/share/Button.tsx\");\nexports.MainFrame = props => {\n    return (React.createElement(React.Fragment, null,\n        React.createElement(\"h1\", null, `ボタンコンポーネントのテスト`),\n        React.createElement(Button_1.Button, { type: \"default\", onClick: () => {\n                alert(`デフォルト`);\n            } }, `ボタン`),\n        React.createElement(Button_1.Button, { type: \"dashed\", onClick: () => {\n                alert(`破線のヤツ`);\n            } }, `ボタン`),\n        React.createElement(Button_1.Button, { type: \"primary\", onClick: () => {\n                alert(`Primary`);\n            } }, `ボタン`),\n        React.createElement(Button_1.Button, { type: \"danger\", onClick: () => {\n                alert(`Danger`);\n            } }, `ボタン`),\n        React.createElement(Button_1.Button, { type: \"disabled\", disabled: true }, `ボタン`)));\n};\n\n\n//# sourceURL=webpack:///./src/components/MainFrame.tsx?");
+
+/***/ }),
+
+/***/ "./src/components/share/Button.tsx":
+/*!*****************************************!*\
+  !*** ./src/components/share/Button.tsx ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nconst classnames_1 = __webpack_require__(/*! classnames */ \"./node_modules/classnames/index.js\");\nexports.Button = props => {\n    const buttonStyle = () => {\n        if (props.disabled) {\n            return `mg-button-disabled`;\n        }\n        else {\n            switch (props.type) {\n                case \"primary\":\n                    return `mg-button-primary`;\n                case \"dashed\":\n                    return `mg-button-dashed`;\n                case \"danger\":\n                    return `mg-button-danger`;\n                default:\n                    return `mg-button-default`;\n            }\n        }\n    };\n    return (React.createElement(\"button\", { type: props.htmlType, disabled: props.disabled, className: classnames_1.default(`mg-button`, buttonStyle(), props.className), onClick: props.onClick, onTouchStart: props.onTouchStart, onMouseEnter: props.onMouseEnter, style: props.style }, props.children));\n};\nexports.Button.defaultProps = {\n    type: \"default\",\n    htmlType: \"button\",\n    disabled: false,\n    elevate: false\n};\n\n\n//# sourceURL=webpack:///./src/components/share/Button.tsx?");
 
 /***/ }),
 
@@ -282,7 +305,19 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst 
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nconst react_dom_1 = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\nconst Logger_1 = __webpack_require__(/*! ./components/Logger */ \"./src/components/Logger.ts\");\nconst { debug } = Logger_1.logger(\"index:index\");\ndebug(`this is index page!`);\nconsole.log(`this is index page!`);\nreact_dom_1.render(React.createElement(React.Fragment, null,\n    React.createElement(\"div\", { className: \"topTitle\" }, `This is Index Page!!`)), document.getElementById(\"root\"));\n\n\n//# sourceURL=webpack:///./src/index.tsx?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nconst react_dom_1 = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\nconst Logger_1 = __webpack_require__(/*! ./utils/Logger */ \"./src/utils/Logger.ts\");\nconst MainFrame_1 = __webpack_require__(/*! ./components/MainFrame */ \"./src/components/MainFrame.tsx\");\nconst { debug } = Logger_1.logger(\"index:\");\ndebug(`this is index page!`);\nreact_dom_1.render(React.createElement(MainFrame_1.MainFrame, null), document.getElementById(\"root\"));\n\n\n//# sourceURL=webpack:///./src/index.tsx?");
+
+/***/ }),
+
+/***/ "./src/utils/Logger.ts":
+/*!*****************************!*\
+  !*** ./src/utils/Logger.ts ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst Debug = __webpack_require__(/*! debug */ \"./node_modules/debug/src/browser.js\");\nexports.logger = (namespace) => {\n    return {\n        debug: Debug(`rec-tools:${namespace}`),\n        error: Debug(`rec-tools:error:${namespace}`),\n        info: Debug(`rec-tools:info:${namespace}`),\n        warn: Debug(`rec-tools:warn:${namespace}`),\n        throwError: msg => {\n            throw new Error(`${namespace}: ${msg}`);\n        }\n    };\n};\n\n\n//# sourceURL=webpack:///./src/utils/Logger.ts?");
 
 /***/ })
 

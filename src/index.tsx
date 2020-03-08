@@ -1,14 +1,9 @@
 import * as React from "react";
 import { render } from "react-dom";
-import { logger } from "./components/Logger";
-const { debug } = logger("index:index");
+import { logger } from "./utils/Logger";
+import { MainFrame } from "./components/MainFrame";
+const { debug } = logger("index:");
 
 debug(`this is index page!`);
-console.log(`this is index page!`);
 
-render(
-  <>
-    <div className="topTitle">{`This is Index Page!!`}</div>
-  </>,
-  document.getElementById("root")
-);
+render(<MainFrame />, document.getElementById("root"));
