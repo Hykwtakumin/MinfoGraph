@@ -17,7 +17,7 @@ mode: process.env.NODE_ENV === "production" ? "production" : "development",
 entry: path.resolve(__dirname, "src/index.tsx"),
 output: {
 filename: "index.js",
-path: path.resolve(__dirname, "docs/dist/")
+path: path.resolve(__dirname, "public/dist/")
 },
 watch: nodeEnv !== "production",
 plugins,
