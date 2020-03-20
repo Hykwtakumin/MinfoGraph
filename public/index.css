@@ -4,7 +4,6 @@
     font-size: 2rem;
 }
 
-
 /*Button Component*/
 .mg-button {
     border: 1px solid transparent;
@@ -95,4 +94,48 @@
 
 .mg-button-disabled:active {
     background-color: #d9d9d9;
+}
+
+/*Header Component*/
+.mg-header {
+    width: 100%;
+    top: 0;
+    font-size: 1.5rem;
+    background-color: #37474F;
+}
+
+/*Footer Component*/
+.mg-footer {
+    width: 100%;
+    bottom: 0;
+    background-color: #37474F;
+}
+
+/*Navigation Bar Component*/
+.mg-nav-bar {
+    position: sticky;
+    width: 100%;
+    border: 1px solid transparent;
+    background-color: #37474F;
+    color: #fff;
+    display: flex;
+    overflow-x: auto;
+}
+
+.mg-nav-bar-content {
+    min-width: 80px;
+    color: #fff;
+    background-color: #607D8B;
+    font-size: 1rem;
+    margin: 1vw 1vh;
+}
+
+
+/*Modal Component*/
+.mg-modal {
+
+}
+
+.mg-modal-overlay {
+
 }

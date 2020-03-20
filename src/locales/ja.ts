@@ -1,3 +1,3 @@
-import { LocalizedText } from "./LocalizedText";
-
-export const ja: LocalizedText = {};
+// import { LocalizedText } from "./LocalizedText";
+//
+// export const ja: LocalizedText = {};

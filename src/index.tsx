@@ -6,4 +6,6 @@ const { debug } = logger("index:");
 
 debug(`this is index page!`);
 
-render(<MainFrame />, document.getElementById("root"));
+const rootElement: HTMLElement = document.getElementById("root");
+
+render(<MainFrame />, rootElement);
