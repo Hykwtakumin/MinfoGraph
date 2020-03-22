@@ -1,3 +1,16 @@
+body {
+    margin: 0;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 .topTitle {
     background-color: darkslategray;
     color: azure;
@@ -98,16 +111,17 @@
 
 /*Header Component*/
 .mg-header {
-    width: 100%;
+    width: 100vw;
     top: 0;
     font-size: 1.5rem;
     background-color: #37474F;
+    color: #fff;
 }
 
 /*Footer Component*/
 .mg-footer {
     width: 100%;
-    bottom: 0;
+    bottom: 100vh;
     background-color: #37474F;
 }
 
@@ -138,4 +152,39 @@
 
 .mg-modal-overlay {
 
+}
+
+/*Operator filter Component*/
+.mg-op-filter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mg-op-filter-row-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center
+}
+
+.mg-op-filter-cor-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.mg-op-filter-buttons {
+    display: flex;
+    min-width: 500px;
+}
+
+.mg-op-filter-items {
+    min-width: 50px;
+    background-color: #40a9ff;
+}
+
+.mg-op-filter-items-selected {
+    min-width: 50px;
+    background-color: #1890ff;
 }

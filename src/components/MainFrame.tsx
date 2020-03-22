@@ -3,10 +3,18 @@ import { Button } from "./share/Button";
 import { NavBar } from "./share/NavBar";
 import { Header } from "./share/Header";
 import { Footer } from "./share/Footer";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch
+} from "react-router-dom";
 import { AboutPage } from "./about/AboutPage";
 import { ComparePage } from "./compare/ComparePage";
 import { RecSimulator } from "./recruitment-simulator/RecSimulator";
+import { NotFoundPage } from "./share/NotFound";
+import { Operators } from "./operators/Operators";
 
 export const MainFrame = props => {
   return (
@@ -45,6 +53,10 @@ export const MainFrame = props => {
             <Button type={"disabled"} disabled={true}>{`ボタン`}</Button>
           </Route>
 
+          <Route exact path="/operators">
+            <Operators />
+          </Route>
+
           <Route exact path="/compare">
             <ComparePage />
           </Route>
@@ -55,6 +67,10 @@ export const MainFrame = props => {
 
           <Route exact path="/about">
             <AboutPage />
+          </Route>
+
+          <Route exact path="*">
+            <NotFoundPage />
           </Route>
         </Switch>
         <Footer />

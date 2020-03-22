@@ -8,7 +8,9 @@ type NavBarProps = {};
 export const NavBar: FC<NavBarProps> = props => {
   return (
     <div className="mg-nav-bar">
-      <div className="mg-nav-bar-content">{`オペレーター一覧`}</div>
+      <div className="mg-nav-bar-content">
+        <Link to="/operators">{`オペレーター一覧`}</Link>
+      </div>
       <div className="mg-nav-bar-content">
         <Link to="/compare">{`オペレーター比較`}</Link>
       </div>

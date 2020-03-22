@@ -10,6 +10,7 @@ export const ComparePage: FC<ComparePageProps> = props => {
   return (
     <>
       <h1>{`This is Compare Page!`}</h1>
+      <p>{`and this is added messages !`}</p>
     </>
   );
 };

@@ -26,7 +26,7 @@ export const ModalContext = React.createContext<{ showModal: ShowModal }>({
 });
 
 /*Modal Window*/
-export const Modal: FC<ModalProps> = props => {
+export const ModalProvider: FC<ModalProps> = props => {
   const [isShow, setIsShow] = React.useState<boolean>(false);
 
   const defaultProps: ModalProps = {
