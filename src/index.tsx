@@ -8,4 +8,12 @@ debug(`this is index page!`);
 
 const rootElement: HTMLElement = document.getElementById("root");
 
-render(<MainFrame />, rootElement);
+
+/*JSONをすべて読みこんでからreactにロードしてrender開始*/
+fetch("/data/test.json").then(async(result ) => {
+   const data = await result.json();
+   console.dir(data);
+   render(<MainFrame />, rootElement);
+}).catch(console.dir);
+
+

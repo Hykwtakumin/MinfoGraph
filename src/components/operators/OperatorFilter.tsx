@@ -73,8 +73,9 @@ export const OperatorFilter: FC<OpeFilterProps> = props => {
       history.push(
         `${url.pathname}?r=${rarities.toString()}&c=${classes.toString()}`
       );
-    } else {
-      /*skip*/
+    } else if (rarities.length === 0 && classes.length === 0) {
+      /*何もない場合はリセット*/
+      history.push(`${url.pathname}`);
     }
   }, [selectedParams]);
 
