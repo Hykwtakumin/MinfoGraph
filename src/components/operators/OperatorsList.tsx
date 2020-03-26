@@ -13,17 +13,13 @@ import {
 } from "react-router-dom";
 
 type OpeListProps = {
-    rarities: number[];
-    classes: string[];
-}
+  rarities: number[];
+  classes: string[];
+};
 
 /*transition-groupの使用も視野に入れる*/
 export const OperatorsList: FC<OpeListProps> = props => {
+  const { rarities, classes } = props;
 
-  const {rarities,classes} = props;
-
-    return (
-        <>
-        </>
-    );
-}
+  return <></>;
+};

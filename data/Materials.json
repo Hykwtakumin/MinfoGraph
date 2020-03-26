@@ -1,0 +1,484 @@
+[
+  {
+    "name": "源岩鉱",
+    "rarity": 0,
+    "drops": [
+    ],
+    "recipes": [
+    ]
+  },
+  {
+    "name": "初級源岩",
+    "rarity": 1,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "源岩鉱",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "name": "中級源岩",
+    "rarity": 2,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "初級源岩",
+        "amount": 5
+      }
+    ]
+  },
+  {
+    "name": "上級源岩",
+    "rarity": 3,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "中級源岩",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "name": "ブドウ糖",
+    "rarity": 0,
+    "drops": [
+    ],
+    "recipes": [
+    ]
+  },
+  {
+    "name": "初級糖原",
+    "rarity": 1,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "ブドウ糖",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "name": "中級糖原",
+    "rarity": 2,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "初級糖原",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "name": "上級糖原",
+    "rarity": 3,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "中級糖原",
+        "amount": 2
+      },
+      {
+        "material": "中級異鉄",
+        "amount": 1
+      },
+      {
+        "material": "マンガン",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "エステル原料",
+    "rarity": 0,
+    "drops": [
+    ],
+    "recipes": [
+    ]
+  },
+  {
+    "name": "初級エステル",
+    "rarity": 1,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "エステル原料",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "name": "初級エステル",
+    "rarity": 1,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "エステル原料",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "name": "中級エステル",
+    "rarity": 2,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "初級エステル",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "name": "上級エステル",
+    "rarity": 3,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "中級エステル",
+        "amount": 2
+      },
+      {
+        "material": "中級アケトン",
+        "amount": 1
+      },
+      {
+        "material": "合成コール",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "異鉄の欠片",
+    "rarity": 0,
+    "drops": [
+    ],
+    "recipes": []
+  },
+  {
+    "name": "初級異鉄",
+    "rarity": 1,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "異鉄の欠片",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "name": "中級異鉄",
+    "rarity": 2,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "初級異鉄",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "name": "上級異鉄",
+    "rarity": 3,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "中級異鉄",
+        "amount": 2
+      },
+      {
+        "material": "中級装置",
+        "amount": 1
+      },
+      {
+        "material": "中級エステル",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "アケトン試剤",
+    "rarity": 0,
+    "drops": [
+    ],
+    "recipes": []
+  },
+  {
+    "name": "初級アケトン",
+    "rarity": 1,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "アケトン試剤",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "name": "中級アケトン",
+    "rarity": 2,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "初級アケトン",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "name": "上級アケトン",
+    "rarity": 3,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "中級アケトン",
+        "amount": 2
+      },
+      {
+        "material": "中級糖原",
+        "amount": 1
+      },
+      {
+        "material": "マンガン",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "破損装置",
+    "rarity": 0,
+    "drops": [
+    ],
+    "recipes": [
+    ]
+  },
+  {
+    "name": "初級装置",
+    "rarity": 1,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "破損装置",
+        "amount": 3
+      }
+    ]
+  },
+  {
+    "name": "中級装置",
+    "rarity": 2,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "初級装置",
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "name": "上級装置",
+    "rarity": 1,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "中級装置",
+        "amount": 1
+      },
+      {
+        "material": "中級源岩",
+        "amount": 2
+      },
+      {
+        "material": "砥石",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "砥石",
+    "rarity": 2,
+    "drops": [
+    ],
+    "recipes": [
+    ]
+  },
+  {
+    "name": "上級砥石",
+    "rarity": 3,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "砥石",
+        "amount": 1
+      },
+      {
+        "material": "中級異鉄",
+        "amount": 1
+      },
+      {
+        "material": "中級装置",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "合成コール",
+    "rarity": 2,
+    "drops": [
+    ],
+    "recipes": [
+    ]
+  },
+  {
+    "name": "上級合成コール",
+    "rarity": 3,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "合成コール",
+        "amount": 1
+      },
+      {
+        "material": "中級糖原",
+        "amount": 1
+      },
+      {
+        "material": "RMA70_12",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "マンガン",
+    "rarity": 2,
+    "drops": [
+    ],
+    "recipes": [
+    ]
+  },
+  {
+    "name": "上級マンガン",
+    "rarity": 3,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "マンガン",
+        "amount": 2
+      },
+      {
+        "material": "中級エステル",
+        "amount": 1
+      },
+      {
+        "material": "合成コール",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "RMA70_12",
+    "rarity": 2,
+    "drops": [
+    ],
+    "recipes": [
+    ]
+  },
+  {
+    "name": "RMA70_24",
+    "rarity": 3,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "RMA70_12",
+        "amount": 1
+      },
+      {
+        "material": "中級源岩",
+        "amount": 2
+      },
+      {
+        "material": "中級アケトン",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "融合剤",
+    "rarity": 4,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "上級異鉄",
+        "amount": 1
+      },
+      {
+        "material": "上級源岩",
+        "amount": 1
+      },
+      {
+        "material": "上級アケトン",
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "ナノフレーク",
+    "rarity": 4,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "上級装置",
+        "amount": 1
+      },
+      {
+        "material": "上級合成コール",
+        "amount": 2
+      }
+    ]
+  },
+  {
+    "name": "D32鋼",
+    "rarity": 4,
+    "drops": [
+    ],
+    "recipes": [
+      {
+        "material": "上級マンガン",
+        "amount": 1
+      },
+      {
+        "material": "RMA70_24",
+        "amount": 1
+      },
+      {
+        "material": "上級砥石",
+        "amount": 1
+      }
+    ]
+  }
+]
