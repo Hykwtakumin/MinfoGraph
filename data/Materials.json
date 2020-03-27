@@ -2,16 +2,13 @@
   {
     "name": "源岩鉱",
     "rarity": 0,
-    "drops": [
-    ],
-    "recipes": [
-    ]
+    "drops": [],
+    "recipes": []
   },
   {
     "name": "初級源岩",
     "rarity": 1,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "源岩鉱",
@@ -22,8 +19,7 @@
   {
     "name": "中級源岩",
     "rarity": 2,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "初級源岩",
@@ -34,8 +30,7 @@
   {
     "name": "上級源岩",
     "rarity": 3,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "中級源岩",
@@ -46,16 +41,13 @@
   {
     "name": "ブドウ糖",
     "rarity": 0,
-    "drops": [
-    ],
-    "recipes": [
-    ]
+    "drops": [],
+    "recipes": []
   },
   {
     "name": "初級糖原",
     "rarity": 1,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "ブドウ糖",
@@ -66,8 +58,7 @@
   {
     "name": "中級糖原",
     "rarity": 2,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "初級糖原",
@@ -78,8 +69,7 @@
   {
     "name": "上級糖原",
     "rarity": 3,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "中級糖原",
@@ -98,16 +88,13 @@
   {
     "name": "エステル原料",
     "rarity": 0,
-    "drops": [
-    ],
-    "recipes": [
-    ]
+    "drops": [],
+    "recipes": []
   },
   {
     "name": "初級エステル",
     "rarity": 1,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "エステル原料",
@@ -118,8 +105,7 @@
   {
     "name": "初級エステル",
     "rarity": 1,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "エステル原料",
@@ -130,8 +116,7 @@
   {
     "name": "中級エステル",
     "rarity": 2,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "初級エステル",
@@ -142,8 +127,7 @@
   {
     "name": "上級エステル",
     "rarity": 3,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "中級エステル",
@@ -162,15 +146,13 @@
   {
     "name": "異鉄の欠片",
     "rarity": 0,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": []
   },
   {
     "name": "初級異鉄",
     "rarity": 1,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "異鉄の欠片",
@@ -181,8 +163,7 @@
   {
     "name": "中級異鉄",
     "rarity": 2,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "初級異鉄",
@@ -193,8 +174,7 @@
   {
     "name": "上級異鉄",
     "rarity": 3,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "中級異鉄",
@@ -213,15 +193,13 @@
   {
     "name": "アケトン試剤",
     "rarity": 0,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": []
   },
   {
     "name": "初級アケトン",
     "rarity": 1,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "アケトン試剤",
@@ -232,8 +210,7 @@
   {
     "name": "中級アケトン",
     "rarity": 2,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "初級アケトン",
@@ -244,8 +221,7 @@
   {
     "name": "上級アケトン",
     "rarity": 3,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "中級アケトン",
@@ -264,16 +240,13 @@
   {
     "name": "破損装置",
     "rarity": 0,
-    "drops": [
-    ],
-    "recipes": [
-    ]
+    "drops": [],
+    "recipes": []
   },
   {
     "name": "初級装置",
     "rarity": 1,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "破損装置",
@@ -284,8 +257,7 @@
   {
     "name": "中級装置",
     "rarity": 2,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "初級装置",
@@ -296,8 +268,7 @@
   {
     "name": "上級装置",
     "rarity": 1,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "中級装置",
@@ -316,16 +287,13 @@
   {
     "name": "砥石",
     "rarity": 2,
-    "drops": [
-    ],
-    "recipes": [
-    ]
+    "drops": [],
+    "recipes": []
   },
   {
     "name": "上級砥石",
     "rarity": 3,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "砥石",
@@ -344,16 +312,13 @@
   {
     "name": "合成コール",
     "rarity": 2,
-    "drops": [
-    ],
-    "recipes": [
-    ]
+    "drops": [],
+    "recipes": []
   },
   {
     "name": "上級合成コール",
     "rarity": 3,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "合成コール",
@@ -372,16 +337,13 @@
   {
     "name": "マンガン",
     "rarity": 2,
-    "drops": [
-    ],
-    "recipes": [
-    ]
+    "drops": [],
+    "recipes": []
   },
   {
     "name": "上級マンガン",
     "rarity": 3,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "マンガン",
@@ -400,16 +362,13 @@
   {
     "name": "RMA70_12",
     "rarity": 2,
-    "drops": [
-    ],
-    "recipes": [
-    ]
+    "drops": [],
+    "recipes": []
   },
   {
     "name": "RMA70_24",
     "rarity": 3,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "RMA70_12",
@@ -428,8 +387,7 @@
   {
     "name": "融合剤",
     "rarity": 4,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "上級異鉄",
@@ -448,8 +406,7 @@
   {
     "name": "ナノフレーク",
     "rarity": 4,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "上級装置",
@@ -464,8 +421,7 @@
   {
     "name": "D32鋼",
     "rarity": 4,
-    "drops": [
-    ],
+    "drops": [],
     "recipes": [
       {
         "material": "上級マンガン",

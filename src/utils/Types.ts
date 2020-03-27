@@ -21,7 +21,7 @@ export type Place =
   | "Victoria"
   | "Unknown";
 
-export type Gender = "male" | "female" | "Unknown";
+export type Gender = "Male" | "Female" | "Unknown";
 
 export type Class =
   | "Vanguard"
@@ -56,6 +56,7 @@ export type Race =
   | "Perro"
   | "Petram"
   | "Reproba"
+  | "Robot"
   | "Sankta"
   | "Sarkaz"
   | "Savra"

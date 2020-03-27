@@ -1,3 +1,33 @@
-{
-
-}
+[
+  {
+    "name": "Lancet_2",
+    "faction": "Rhodes Island",
+    "gender": "Female",
+    "race": "Robot",
+    "class": "Medic",
+    "rarity": 1,
+    "height": 149,
+    "combatExperience": 2,
+    "isInfected": false,
+    "recTags": ["遠距離", "治療", "ロボット"],
+    "cv": "下田麻美",
+    "skills": [],
+    "talents": [
+      "救急スプレーI",
+      "救急スプレーⅡ",
+      "救急スプレーⅢ",
+      "救急スプレーⅣ",
+      "救急スプレーⅤ",
+      "救急スプレーⅥ"
+    ],
+    "baseHP": 261,
+    "baseATK": 42,
+    "baseDef": 16,
+    "baseArtsRes": 0,
+    "baseRedeployTime": 200,
+    "baseCost": 3,
+    "baseBlock": 1,
+    "attackInterval": 2.85,
+    "maxTrust": ["HP+100", "ATK+40"]
+  }
+]
