@@ -79,13 +79,24 @@ export const OperatorFilter: FC<OpeFilterProps> = props => {
     }
   }, [selectedParams]);
 
-  const handleButtonClick = (value: string) => (event: React.MouseEvent) => {
+  // const handleButtonClick = (value: string) => (event: React.MouseEvent) => {
+  //   if (selectedParams.includes(value)) {
+  //     setSelectedParams(selectedParams.filter(item => item !== value));
+  //   } else {
+  //     setSelectedParams([...selectedParams, value]);
+  //   }
+  // };
+
+  const handleButtonClick = (value: string) => (event: React.MouseEvent) => React.useCallback( () => {
+    event.preventDefault();
+    event.stopPropagation();
     if (selectedParams.includes(value)) {
       setSelectedParams(selectedParams.filter(item => item !== value));
     } else {
       setSelectedParams([...selectedParams, value]);
     }
-  };
+  }, [])
+
 
   return (
     <div className="mg-op-filter">

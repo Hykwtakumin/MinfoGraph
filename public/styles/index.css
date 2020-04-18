@@ -1,0 +1,75 @@
+/*---------------------------------
+
+  Variables
+
+---------------------------------*/
+
+:root {
+    /* Colors */
+    --light-grey: #f0f2f5;
+    --dark-blue: #12274f;
+    --light-blue: #55b2ff;
+    --white: #fff;
+    --green: #52c41a;
+    --red: #f5222d;
+}
+
+/*---------------------------------
+
+  Global
+
+---------------------------------*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+}
+
+/*マジックナンバー的な?*/
+html {
+    font-size: calc(112.5% + 0.25vw) !important;
+}
+
+body {
+    background-color: #12274f !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* メインビューの幅を固定 */
+#root {
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*---------------------------------
+
+  Common
+
+---------------------------------*/
+
+/* pageのスタイル */
+.page {
+    background-color: var(--light-grey);
+    padding: 3vh 3vw;
+    border-radius: 10px;
+}
+
+/* 初回ロード時にtransitionが走るバグの抑制 */
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+.restrict-scroll {
+    overflow: hidden;
+}
+
+.hidden-content {
+    display: none;
+}

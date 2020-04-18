@@ -1,0 +1,127 @@
+/*Buttonの色等の変数*/
+/*bgc => means back-ground-color*/
+/*bdr => means border*/
+:root {
+    --button-text-color: rgba(0, 0, 0, 0.65);
+    /*primary*/
+    --primary-bgc-normal: #1890ff;
+    --primary-bgc-hover: #40a9ff;
+    --primary-bgc-active: #69c0ff;
+    --primary-bdr-normal: 1px solid transparent;
+    --primary-bdr-hover: 1px solid transparent;
+    --primary-text-normal: #fff;
+    --primary-text-hover: #fff;
+    /*dashed*/
+    --dashed-bgc-normal: #fff;
+    --dashed-bgc-hover: #fafafa;
+    --dashed-bgc-active: #d9d9d9;
+    --dashed-bdr-normal: 1px dashed var(--light-grey);
+    --dashed-bdr-hover: 1px dashed var(--primary-bgc-normal);
+    --dashed-text-normal: var(--button-text-color);
+    --dashed-text-hover: var(--primary-bgc-normal);
+    /*danger*/
+    --danger-bgc-normal: #f5222d;
+    --danger-bgc-hover: #ff4d4f;
+    --danger-bgc-active: #ff7875;
+    --danger-bdr-normal: 1px solid var(--light-grey);
+    --danger-bdr-hover: 1px solid transparent;
+    --danger-text-normal: #fff;
+    --danger-text-hover: #fff;
+    /*disabled*/
+    --disabled-bgc: #f5f5f5;
+    --disabled-bdr: #d9d9d9;
+    --disabled-text: rgba(0, 0, 0, 0.25);
+    /*default*/
+    --default-bgc-normarl: #fff;
+    --default-bgc-hover: #fafafa;
+    --default-bgc-active: #d9d9d9;
+    --default-bdr-normarl: 1px solid var(--light-grey);
+    --default-bdr-hover: 1px solid var(--primary-bgc-normal);
+    --default-text-normal: var(--button-text-color);
+    --default-text-hover: var(--primary-bgc-normal);
+}
+
+/*Button Component*/
+.mg-button {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 12px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.mg-button-default {
+    border: var(--default-bdr-normarl);
+    color: var(--default-text-normal);
+    background-color: var(--default-bgc-normarl);
+}
+
+.mg-button-default:hover {
+    border: var(--default-bdr-hover);
+    color: var(--default-text-hover);
+    background-color: var(--default-bgc-hover);
+}
+
+.mg-button-default:active {
+    background-color: var(--default-bgc-active);
+}
+
+.mg-button-primary {
+    border: var(--primary-bdr-normal);
+    color: var(--primary-text-normal);
+    background-color: var(--primary-bgc-normal);
+}
+
+.mg-button-primary:hover {
+    border: var(--primary-bdr-hover);
+    color: var(--primary-text-hover);
+    background-color: var(--primary-bgc-hover);
+}
+
+.mg-button-primary:active {
+    background-color: var(--primary-bgc-active);
+}
+
+.mg-button-dashed {
+    border: var(--dashed-bdr-normal);
+    color: var(--dashed-text-normal);
+    background-color: var(--dashed-bgc-normal);
+}
+
+.mg-button-dashed:hover {
+    border: var(--dashed-bdr-hover);
+    color: var(--dashed-text-hover);
+    background-color: var(--dashed-bgc-hover);
+}
+
+.mg-button-dashed:active {
+    background-color: var(--dashed-bgc-active);
+}
+
+.mg-button-danger {
+    border: var(--danger-bdr-normal);
+    color: var(--danger-text-normal);
+    background-color: var(--danger-bgc-normal);
+}
+
+.mg-button-danger:hover {
+    border: var(--danger-bdr-hover);
+    color: var(--danger-text-hover);
+    background-color: var(--danger-bgc-hover);
+}
+
+.mg-button-danger:active {
+    background-color: var(--danger-bgc-active);
+}
+
+.mg-button-disabled {
+    border: var(--disabled-bdr);
+    color: var(--disabled-text);
+    background-color: var(--disabled-bgc);
+    cursor: not-allowed;
+}
+
+.mg-button-elevate {
+    box-shadow: 0 0 4px #999;
+}

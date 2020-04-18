@@ -16,28 +16,21 @@ type ButtonProps = {
 type ButtonType = "primary" | "default" | "dashed" | "danger" | "disabled";
 
 export const Button: React.FC<ButtonProps> = props => {
-  const buttonStyle = (): string => {
-    if (props.disabled) {
-      return `mg-button-disabled`;
-    } else {
-      switch (props.type) {
-        case "primary":
-          return `mg-button-primary`;
-        case "dashed":
-          return `mg-button-dashed`;
-        case "danger":
-          return `mg-button-danger`;
-        default:
-          return `mg-button-default`;
-      }
-    }
-  };
-
+  /*めちゃくちゃ再描画されるので関数にはしない*/
   return (
     <button
       type={props.htmlType}
       disabled={props.disabled}
-      className={cx(`mg-button`, buttonStyle(), props.className)}
+      className={cx(
+        "button",
+        props.className,
+        { "mg-button-elevate": props.elevate },
+        { "mg-button-primary": props.type === "primary" },
+        { "mg-button-dashed": props.type === "dashed" },
+        { "mg-button-danger": props.type === "danger" },
+        { "mg-button-default": props.type === "default" },
+        { "mg-button-disabled": props.disabled }
+      )}
       onClick={props.onClick}
       onTouchStart={props.onTouchStart}
       onMouseEnter={props.onMouseEnter}

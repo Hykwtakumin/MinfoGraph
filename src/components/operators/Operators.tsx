@@ -1,6 +1,5 @@
 import * as React from "react";
 import { logger } from "../../utils/Logger";
-import { FC, useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -17,11 +16,11 @@ const { debug } = logger("operators:");
 
 type OperatorsProps = {};
 
-export const Operators: FC<OperatorsProps> = props => {
+export const Operators: React.FC<OperatorsProps> = props => {
   const location = useLocation();
   const query = location.search;
 
-  const getParams = (): string[] => {
+  const getParams: string[] = React.useMemo(() => {
     const params = new URLSearchParams(query.substring(1));
     const rarities = params.get(`r`)?.split(`,`);
     const classes = params.get(`c`)?.split(`,`);
@@ -29,20 +28,14 @@ export const Operators: FC<OperatorsProps> = props => {
     rarities && rarities.forEach(item => paramsArray.push(item));
     classes && classes.forEach(item => paramsArray.push(item));
     return paramsArray;
-  };
-
-  const [currentParams, setCurrentParams] = useState<string[]>(
-    getParams() || []
-  );
-
-  useEffect(() => {
-    debug(query);
-    setCurrentParams(getParams());
   }, [query]);
 
-  return (
-    <>
-      <OperatorFilter currentParams={currentParams} />
-    </>
-  );
+  const [currentParams, setCurrentParams] = React.useState<string[]>(getParams || []);
+
+  React.useEffect(() => {
+    debug(query);
+    setCurrentParams(getParams);
+  }, [query]);
+
+  return <OperatorFilter currentParams={currentParams} />;
 };
